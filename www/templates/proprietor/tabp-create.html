@@ -1,0 +1,69 @@
+<!-- ==========================================================================
+View: Post New Offer
+=========================================================================== -->
+<ion-view title="POST NEW OFFER">
+	<ion-content has-header="true" padding="true">
+
+		<div class="card transparent">
+  			<div class="item item-text-wrap">
+
+				<form name="post" novalidate>
+
+					<div class="list">
+
+					  	<label class="item item-input input-trans" >
+					    	<input type="text" placeholder="Counter" class="input-color" ng-model="post.counter" id="post.counter" name="post.counter"  />
+					  	</label>
+
+					  	<label class="item item-input input-trans" >
+					    	<input type="text" placeholder="Date" class="input-color" ng-model="post.date" id="post.date" name="post.date"  />
+					  	</label>
+
+					  	<label class="item item-input input-trans" >
+					    	<input type="text" placeholder="Start Time" class="input-color" ng-model="post.timefrom" id="post.timefrom" name="post.timefrom"  />
+					  	</label>
+
+					  	<label class="item item-input input-trans" >
+					    	<input type="text" placeholder="End Time" class="input-color" ng-model="post.timeto" id="post.timeto" name="post.timeto"  />
+					  	</label>
+
+					  	<label class="item item-input input-trans" >
+					    	<input type="text" placeholder="Title" class="input-color" ng-model="post.title" id="post.title" name="post.title"  />
+					  	</label>
+
+					  	<label class="item item-input input-trans" >
+					    	<input type="text" placeholder="Details" class="input-color" ng-model="post.details" id="post.details" name="post.details"  />
+					  	</label>
+
+					</div>
+
+				    <div class="button-bar">
+
+				    	<button class="button button-calm" 
+				    			type="button"
+				    			ng-click="postOffer(post.title, post.details, post.date, post.timefrom, post.timeto, post.counter )"
+				    			nav-clear
+				    		>post
+				    	</button>
+
+					  	<button class="button button-calm"
+					  			type="button"
+					  			ng-href="#/tabp/offers"
+					  			nav-clear
+					  		>Cancel
+					  	</button>
+
+					</div>
+
+
+					<ul class="form-errors">
+
+		    		</ul>
+
+    			</form>
+
+    		</div>
+		</div>
+
+	</ion-content>
+</ion-view>

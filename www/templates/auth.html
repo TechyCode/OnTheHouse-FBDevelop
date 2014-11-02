@@ -1,0 +1,28 @@
+<!-- ==========================================================================
+View: User Login
+=========================================================================== -->
+<ion-view title="AUTHORIZATION">
+	<ion-content has-header="true" padding="true">
+
+		<form name="form.loginForm" novalidate>
+
+			<div class="list">
+			  	<label class="item item-input input-trans">
+			    	<input type="text" placeholder="Email" class="input-color" ng-model="email" id="email" name="email" required />
+			  	</label>
+			  	<label class="item item-input input-trans">
+			    	<input type="text" placeholder="Password" class="input-color" ng-model="password" id="password" name="password" required />
+			  	</label>
+			</div>
+
+			<div class="message">Status: {{message}}</div>
+
+		    <div class="button-bar">
+		    	<button class="button button-calm" type="button" nav-clear ng-click="loginAccount(email, password)">Login</button>
+			  	<button class="button button-calm" type="button" nav-clear ng-click="createAccount(email, password)">Create Account</button>
+			</div>
+
+		</form>
+
+	</ion-content>
+</ion-view>

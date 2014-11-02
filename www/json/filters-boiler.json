@@ -1,0 +1,4 @@
+{
+  "filters"   : { "agegroup": "18-24", "type": " ", "geo": "5" },
+  "settings"  : { "facebook": false, "twitter": false, "share": false }
+}

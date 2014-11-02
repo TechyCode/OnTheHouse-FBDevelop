@@ -1,0 +1,124 @@
+<ion-view title="DASHBOARD">
+  <ion-content has-header="true" padding="true" class="nav-content">
+	<ion-list>
+
+	  <!--    -->
+	  <ion-item class="item nav-cat item-divider">
+        Settings
+      </ion-item>
+
+        <ion-item class="item nav-item">
+      		<div class="row">
+  				<div class="col col-50 align-right">Age Group:</div>
+  				<div class="col col-50 align-left">
+	  				<select ng-model="account.filters.agegroup" ng-change="updateFilters();">
+	  					<option ng-repeat="agegroup in userOptions.agegroup" value="{{agegroup.value}}" ng-selected="{{agegroup.value == account.filters.agegroup}}">
+      						{{agegroup.name}}
+    					</option>
+	     			</select>
+     			</div>
+			</div>     		
+      	</ion-item>
+
+      	<ion-item class="item nav-item">
+      		<div class="row">
+  				<div class="col col-50 align-right">Filter Type:</div>
+  				<div class="col col-50 align-left">
+	  				<select ng-model="account.filters.esttype" ng-change="updateFilters();">
+	     				<option ng-repeat="type in userOptions.esttype" value="{{type.value}}" ng-selected="{{type.value == account.filters.esttype}}"> 
+      						{{type.name}}
+    					</option>
+	     			</select>
+	     			
+     			</div>
+			</div>     		
+      	</ion-item>
+
+      	<ion-item class="item nav-item">
+          <div class="row">
+  				<div class="col col-50 align-right">Geo Radius:</div>
+  				<div class="col col-50 align-left">
+	  				<select ng-model="account.filters.geo" ng-change="updateFilters();">
+	     				<option ng-repeat="geo in userOptions.geo" value="{{geo.value}}" ng-selected="{{geo.value == account.filters.geo}}">
+      						{{geo.name}}
+    					</option>
+	     			</select>
+     			</div>
+			</div>
+      	</ion-item>
+
+      <!--    -->
+	  <ion-item class="item nav-cat item-divider">
+        Account
+      </ion-item>
+
+	      <ion-item menu-close class="item nav-item item-icon-left" href="#/tab/homepage">
+	      	<div class="row">
+	      		<i class="icon ion-ios7-person-outline"></i>
+	      		<div class="col iconpadd">User Profile</div>
+	        </div>
+	      </ion-item>
+
+	      <span ng-if="proprietorMode">
+		      <ion-item menu-close class="item nav-item item-icon-left" href="#/tab/feed" ng-click="toggleProprietorMode();">
+		      	<div class="row">
+		      		<i class="icon ion-ios7-gear-outline"></i>
+		      		<div class="col iconpadd">User Access</div>
+		        </div>
+		      </ion-item>
+	  	  </span>
+
+	      <span ng-if="proprietorState">
+	      	<span ng-if="!proprietorMode">
+		      <ion-item menu-close class="item nav-item item-icon-left" href="#/tabp/offers" ng-click="toggleProprietorMode();">
+		      	<div class="row">
+		      		<i class="icon ion-clipboard"></i>
+		      		<div class="col iconpadd">Proprietor Access</div>
+		        </div>
+		      </ion-item>
+		 	</span>
+		  </span>
+
+	      <ion-item menu-close class="item nav-item item-icon-left" href="#/sec/auth">
+	      	<div class="row">
+	      		<i class="icon ion-ios7-unlocked-outline"></i>
+	      		<div class="col iconpadd">Login</div>
+	        </div>
+	      </ion-item>
+
+	      <ion-item menu-close class="item nav-item item-icon-left" ng-click="logoutAccount();">
+	      	<div class="row">
+	      		<i class="icon ion-ios7-locked-outline"></i>
+	      		<div class="col iconpadd">Logout</div>
+	        </div>
+	      </ion-item>
+
+
+	      
+
+
+
+
+	  <!--    -->
+	  <ion-item class="item nav-cat item-divider">
+        Resources
+      </ion-item>
+
+        <ion-item menu-close class="item nav-item item-icon-left" href="#/tab/homepage">
+	        <div class="row">
+	        	<i class="icon ion-ios7-copy-outline"></i>
+	        	<div class="col iconpadd">User Guide</div>
+	        </div>
+	     </ion-item>
+
+	     <ion-item menu-close class="item nav-item item-icon-left" href="#/tab/homepage">
+	        <div class="row">
+	        	<i class="icon ion-ios7-paper-outline"></i>
+	        	<div class="col iconpadd">Use Policy</div>
+	        </div>
+	     </ion-item>
+
+    </ion-list>
+
+  </ion-content>
+</ion-view>

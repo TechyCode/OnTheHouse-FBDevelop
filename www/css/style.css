@@ -1,0 +1,368 @@
+/* ******************************** */
+/* Base 					
+/* ******************************** */
+
+h2 {
+	font-size: 18px !important;
+	font-weight: bold;
+	margin-bottom: 0px !important;
+	margin-top: 0px !important;
+	padding-bottom: 0px !important;
+	padding-top: 2px !important;
+}
+
+h5 {
+	font-size: 16px !important;
+	font-weight: bold;
+}
+
+h6 {
+	font-size: 14px !important;
+	font-weight: bold;
+	margin-bottom: 0px !important;
+	margin-top: 0px !important;
+	padding-bottom: 0px !important;
+	padding-top: 0px !important;
+	color: #3a5e3b !important;
+}
+
+p {
+	font-size: 16px !important;
+	color: #444 !important;
+	line-height: 18px;
+}
+
+.item-body {
+	padding: 0px !important;
+}
+
+.scroll {
+	padding: 0px !important;
+}
+
+.padding {
+	padding: 0px !important;
+}
+
+.row {
+	margin-left: 0px !important;
+	margin-right: 0px !important;
+	padding-left: 0px !important;
+	padding-right: 0px !important;
+	padding-bottom: 0px !important;
+}
+
+.col {
+	margin-left: 0px !important;
+	margin-right: 0px !important;
+	padding-left: 6px !important;
+	padding-right: 6px !important;
+	padding-top: 0px !important;
+	padding-bottom: 0px !important;
+}
+
+.item {
+	padding-top: 4px !important;
+	padding-bottom: 6px !important;
+}
+
+.item-avatar > img:first-child {
+	top: 6px !important;
+}
+
+.center{
+     text-align:center;
+}
+
+/* ******************************** */
+/* List Elements 
+/* ******************************** */
+
+.counter h2 {
+	color: #1f4c21 !important;
+	font-size: 12px !important;
+	text-align: right;
+}
+
+/* ******************************** */
+/* Tools 
+/* ******************************** */
+
+.clear-div {
+	margin: 0px;
+	padding: 0px;
+	clear: both;
+	height: 0px;
+	width: 0px;
+}
+
+.align-right {
+	text-align: right;
+}
+
+.align-left {
+	text-align: left;
+}
+
+.align-center {
+	text-align: center;
+}
+
+.topspace {
+	padding-top: 10px !important;
+}
+
+/* ******************************** */
+/* Google Maps 
+/* ******************************** */
+
+.angular-google-map-container {
+	position: absolute;
+	height: 100% !important;
+    width: 100% !important;
+    
+}
+
+.small-map {
+	padding-right: 8px !important;
+	margin-right: 0px !important;
+	padding-bottom: 0px !important;
+	margin-bottom: 0px !important;
+}
+
+.full-screen {
+	width: 100% !important;
+	height: 100% !important;
+}
+
+/* ******************************** */
+/*  
+/* ******************************** */
+
+.left-buttons .icon {
+	font-size: 14px !important;
+}
+
+.bar.bar-stable {
+	background: rgb(130,20,19) !important;
+	background: -moz-linear-gradient(top,  rgb(130,20,19) 0%, rgb(72,6,7) 100%) !important;
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgb(130,20,19)), color-stop(100%,rgb(72,6,7))) !important;
+	background: -webkit-linear-gradient(top,  rgb(130,20,19) 0%,rgb(72,6,7) 100%) !important;
+	background: -o-linear-gradient(top,  rgb(130,20,19) 0%,rgb(72,6,7) 100%) !important;
+	background: -ms-linear-gradient(top,  rgb(130,20,19) 0%,rgb(72,6,7) 100%) !important;
+	background: linear-gradient(to bottom,  rgb(130,20,19) 0%,rgb(72,6,7) 100%) !important;
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#821413', endColorstr='#480607',GradientType=0 ) !important;
+
+	color: #FFF;
+	border-color: black;
+	box-shadow: 0px 5px 5px black !important;
+	-webkit-box-shadow: 0px 5px 5px black !important;
+}
+
+.title {
+	color: #FFF !important;
+}
+
+.tabs {
+	background: rgb(130,20,19) !important;
+	background: -moz-linear-gradient(top,  rgb(130,20,19) 0%, rgb(72,6,7) 100%) !important;
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgb(130,20,19)), color-stop(100%,rgb(72,6,7))) !important;
+	background: -webkit-linear-gradient(top,  rgb(130,20,19) 0%,rgb(72,6,7) 100%) !important;
+	background: -o-linear-gradient(top,  rgb(130,20,19) 0%,rgb(72,6,7) 100%) !important;
+	background: -ms-linear-gradient(top,  rgb(130,20,19) 0%,rgb(72,6,7) 100%) !important;
+	background: linear-gradient(to bottom,  rgb(130,20,19) 0%,rgb(72,6,7) 100%) !important;
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#821413', endColorstr='#480607',GradientType=0 ) !important;
+
+
+	color: #FFF;
+	border-color: black;
+	box-shadow: 0px -5px 5px black !important;
+	-webkit-box-shadow: 0px -5px 5px black !important;
+}
+
+.pane {
+	background: url(../img/back01.jpg);
+	background-size: 100% 100%;
+	background-repeat: no-repeat;
+}
+
+.item, .item-content {
+	background-color: transparent !important;
+	border-top-style: none;
+	border-right-style: none;
+	border-bottom-style: solid;
+	border-left-style: none;
+	border-color: #000;
+}
+
+.button-icon {
+	color: #FFF !important;
+	font-size: small !important;
+}
+
+
+
+.item-content {
+	margin: 0px !important;
+	padding: 0px !important;
+
+}
+
+.item-avatar {
+
+	margin-bottom: 0px !important;
+	border-style: none;
+	padding-bottom: 6px !important;
+
+}
+
+.item-avatar img {
+	max-width: 60px !important;
+	max-height: 60px !important;
+	left: 7px !important;
+}
+
+
+.tab .icon {
+	padding-top: 4px !important;
+	font-size: 26px !important;
+}
+
+.tab-item {
+	border-top-width: thin;
+	border-right-width: thin;
+	border-bottom-width: thin;
+	border-left-width: thin;
+	border-top-style: none;
+	border-right-style: solid;
+	border-bottom-style: none;
+	border-left-style: solid;
+	border-top-color: #000;
+	border-right-color: #000;
+	border-bottom-color: #000;
+	border-left-color: #333;
+}
+
+.button {
+	background: rgb(34,84,36);
+	background: -moz-linear-gradient(top,  rgba(34,84,36,.5) 0%, rgba(14,35,16,.5) 100%);
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(34,84,36,.5)), color-stop(100%,rgba(14,35,16,.5)));
+	background: -webkit-linear-gradient(top,  rgba(34,84,36,.5) 0%,rgba(14,35,16,.5) 100%);
+	background: -o-linear-gradient(top,  rgba(34,84,36,.5) 0%,rgba(14,35,16,.5) 100%);
+	background: -ms-linear-gradient(top,  rgba(34,84,36,.5) 0%,rgba(14,35,16,.5) 100%);
+	background: linear-gradient(to bottom,  rgba(34,84,36,.5) 0%,rgba(14,35,16,.5) 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#225424', endColorstr='#0e2310',GradientType=0 );
+
+	color: #FFF;
+	border-color: none;
+	border-style: none;
+	box-shadow: 3px 3px 8px black !important;
+	-webkit-box-shadow: 3px 3px 8px black !important;
+}
+
+.back-button {
+	box-shadow: 0px 0px 0px black !important;
+	-webkit-box-shadow: 0px 0px 0px black !important;
+}
+
+/* ******************************** */
+/* Side Navigation 
+/* ******************************** */
+
+.nav-content {
+	background-color: rgba(8,19,8,0.8) !important;
+	color: #FFF;
+}
+
+.nav-content .item-divider {
+	color: #FFF !important;
+	padding-top: 16px !important;
+	padding-bottom: 12px !important;
+	text-align: center;
+}
+
+.nav-content .scroll {
+	padding-left: 0px !important;
+	padding-right: 0px !important;
+}
+
+.nav-content .nav-item {
+	color: #FFF !important;
+}
+
+.nav-item {
+	height: 40px !important;
+	margin: 0px !important;
+	padding-top: 6px !important;
+	padding-left: 3px !important;
+	padding-bottom: 18px !important;
+	background-color: rgba(0,0,0,0.2) !important;
+	border-top-style: none;
+	border-right-style: none;
+	border-bottom-style: solid;
+	border-left-style: none;
+	border-color: #000;
+	font-size: 16px !important;
+}
+
+ .iconpadd {
+ 	padding-left: 50px !important;
+ }
+
+
+/* ******************************** */
+/* Homepage 
+/* ******************************** */
+
+.homepage {
+
+}
+
+.homepage h1 {
+	font-size: 28px;
+	font-weight: bold;
+	text-align: center;
+}
+
+.homepage h3 {
+	font-size: 22px;
+	font-weight: bold;
+	text-align: center;
+}
+
+.homepage p {
+	font-size: 18px !important;
+	color: #000 !important;
+	line-height: 20px !important;
+	margin-left: 20px;
+	margin-right: 20px;
+}
+
+.homepage .item-body {
+	border-style: none;
+
+}
+
+.transparent {
+	background-color: transparent !important;
+}
+
+
+/* Form Validation */
+
+.field-error {
+    border-bottom: 2px solid red;
+}
+
+.form-errors ul {
+    margin: 10px;
+}
+
+.form-errors > li {
+    text-align: left;
+    list-style-position: outside;
+    list-style-type: disc;
+    margin: 10px 25px;
+    color: #cc2511;
+    font-weight: bold;
+}

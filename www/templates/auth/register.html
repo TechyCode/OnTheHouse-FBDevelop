@@ -1,0 +1,67 @@
+<!-- ==========================================================================
+View: Create Account
+=========================================================================== -->
+<ion-view title="REGISTER">
+	<ion-content has-header="true" padding="true">
+
+		<form name="register" novalidate>
+
+			<div class="list">
+
+			  	<label class="item item-input input-trans" ng-class="{'field-error': register.email.$dirty && register.email.$invalid && !register.email.$focused}">
+
+			    	<input type="email" placeholder="Email" class="input-color" ng-model="email" id="email" name="email" required ng-focus has-blurred="false" />
+
+			  	</label>
+
+
+			  	<label class="item item-input input-trans" ng-class="{'field-error': register.password.$dirty && register.password.$invalid && !register.password.$focused}">
+
+			    	<input type="text" placeholder="Password" class="input-color" ng-model="password" id="password" name="password" required ng-minlength="4" ng-maxlength="28" ng-focus has-blurred="false" />
+
+			  	</label>
+
+
+			  	<label class="item item-input input-trans" ng-class="{'field-error': register.password2.$dirty && register.password2.$invalid && !register.password2.$focused}">
+
+			    	<input type="text" placeholder="Password2" class="input-color" ng-model="password2" id="password2" name="password2" required ng-minlength="4" ng-maxlength="28" ng-focus has-blurred="false" />
+
+			  	</label>
+
+			</div>
+
+		    <div class="button-bar">
+		    	<button class="button button-calm" type="button" nav-clear ng-click="createAccount(email, password)">Create Account</button>
+			  	<button class="button button-calm" type="button" nav-clear ng-click="goBack()">Cancel</button>
+			</div>
+
+		
+
+		<ul class="form-errors">
+
+	        <li ng-show="register.password.$dirty && register.password.$error.minlength && !register.password.$focused">Password Must Be At Least 4 Characters Long</li>
+
+	        <li ng-show="register.password.$dirty && register.password.$error.maxlength && !register.password.$focused">Password Must Be Less Than 28 Characters Long</li>
+
+	        <li ng-show="register.password.$dirty && register.password.$error.required && !register.password.$focused">Password Is Required</li>
+
+
+
+	        <li ng-show="register.password2.$dirty && register.password2.$error.minlength && !register.password2.$focused">Password Must Be At Least 4 Characters Long</li>
+
+	        <li ng-show="register.password2.$dirty && register.password2.$error.maxlength && !register.password2.$focused">Password Must Be Less Than 28 Characters Long</li>
+
+	        <li ng-show="register.password2.$dirty && register.password2.$error.required && !register.password2.$focused">Password Is Required</li>
+
+
+
+	        <li ng-show="register.email.$dirty && register.email.$invalid && !register.email.$focused">Email Is Not Valid</li>
+
+	        <li ng-show="register.email.$dirty && register.email.$error.required && !register.email.$focused">Email Is Required</li>
+
+    	</ul>
+
+    	</form>
+
+	</ion-content>
+</ion-view>

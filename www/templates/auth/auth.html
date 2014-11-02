@@ -1,0 +1,44 @@
+<!-- ==========================================================================
+View: User Login
+=========================================================================== -->
+<ion-view title="AUTHORIZATION">
+	<ion-content has-header="true" padding="true">
+
+		<div class="card transparent">
+  			<div class="item item-text-wrap">
+
+		<form name="login" novalidate>
+
+			<div class="list">
+			  	<label class="item item-input input-trans" ng-class="{'field-error': login.email.$dirty && login.email.$invalid && !login.email.$focused}">
+			    	<input type="email" placeholder="Email" class="input-color" ng-model="email" id="email" name="email" required ng-focus has-blurred="false" />
+			  	</label>
+			  	<label class="item item-input input-trans" ng-class="{'field-error': login.password.$dirty && login.password.$invalid && !login.password.$focused}">
+			    	<input type="text" placeholder="Password" class="input-color" ng-model="password" id="password" name="password" required ng-minlength="4" ng-maxlength="28" ng-focus has-blurred="false" />
+			  	</label>
+			</div>
+
+		    <div class="button-bar">
+		    	<button class="button button-calm" type="button" nav-clear ng-click="loginAccount(email, password)">Login</button>
+			  	<button class="button button-calm" type="button" nav-clear href="#/sec/register">Create Account</button>
+			</div>
+
+		<ul class="form-errors">
+
+	        <li ng-show="login.password.$dirty && login.password.$error.minlength && !login.password.$focused">Password Must Be At Least 4 Characters Long</li>
+	        <li ng-show="login.password.$dirty && login.password.$error.maxlength && !login.password.$focused">Password Must Be Less Than 28 Characters Long</li>
+	        <li ng-show="login.password.$dirty && login.password.$error.required && !login.password.$focused">Password Is Required</li>
+
+
+	        <li ng-show="login.email.$dirty && login.email.$invalid && !login.email.$focused">Email Is Not Valid</li>
+	        <li ng-show="login.email.$dirty && login.email.$error.required && !login.email.$focused">Email Is Required</li>
+
+    	</ul>
+
+    	</form>
+
+    		</div>
+		</div>
+
+	</ion-content>
+</ion-view>
